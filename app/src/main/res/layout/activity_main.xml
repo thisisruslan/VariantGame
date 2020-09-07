@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2B2B2B">
+
+    <TextView
+        android:id="@+id/attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="asdas"
+        android:textColor="#C8C8C8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/show_operator"
+        />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/show_operator"
+       android:text="operate"
+       android:textSize="64dp"
+       android:layout_marginTop="70dp"
+       android:textColor="#2AA1DD"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="28sp"
+        android:background="@drawable/button_background"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnD"
+        app:layout_constraintStart_toStartOf="@id/btnD"
+        app:layout_constraintEnd_toEndOf="@id/btnD"
+        android:onClick="variantClick"
+        />
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="28sp"
+        android:background="@drawable/button_background"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:onClick="variantClick"
+        />
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="@id/btnD"
+        app:layout_constraintStart_toStartOf="@id/btnD"
+        app:layout_constraintBottom_toTopOf="@id/btnB"
+        android:onClick="variantClick"
+        />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@id/btnC"
+        app:layout_constraintStart_toStartOf="@id/btnD"
+        app:layout_constraintEnd_toEndOf="@id/btnD"
+        android:onClick="variantClick"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
